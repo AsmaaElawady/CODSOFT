@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator_codsoft.css">
+</head>
+<body >
+    <div class="contanier">
+        <div class="Screen ">
+            <div class="Output">
+              <div class="oper" id="oper"></div>
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="row btn">
+              <input type="button" value="Clear" id="clear" onclick="clearResult()">
+              <input type="button" value="%" onclick="appendValue('%')">
+              <input type="button" value="/" onclick="appendValue('/')">
+            </div>
+            <div class="row btn">
+              <input type="button" value="7" onclick="appendValue('7')">
+              <input type="button" value="8" onclick="appendValue('8')">
+              <input type="button" value="9" onclick="appendValue('9')">
+              <input type="button" value="*" onclick="appendValue('*')">
+            </div>
+            <div class="row btn">
+              <input type="button" value="4" onclick="appendValue('4')">
+              <input type="button" value="5" onclick="appendValue('5')">
+              <input type="button" value="6" onclick="appendValue('6')">
+              <input type="button" value="-" onclick="appendValue('-')">
+            </div>
+            <div class="row btn">
+              <input type="button" value="1" onclick="appendValue('1')">
+              <input type="button" value="2" onclick="appendValue('2')">
+              <input type="button" value="3" onclick="appendValue('3')">
+              <input type="button" value="+" onclick="appendValue('+')">
+            </div>
+            <div class="row btn">
+              <input type="button" value="0" onclick="appendValue('0')">
+              <input type="button" value="." onclick="appendValue('.')">
+              <input type="button" id="clear" value="=" onclick="calculate()">
+            </div>
+        </div>
+        
+    </div>
+   
+    <script src="Calculator_codsoft.js"></script>
+</body>
+</html>
